@@ -1,0 +1,4 @@
+ec\edu\espol\petdaycare\patterns\Command\CancelReservationCommandTest.class
+ec\edu\espol\petdaycare\patterns\Command\CommandManagerTest.class
+ec\edu\espol\petdaycare\patterns\Command\AbstractCommandTest.class
+ec\edu\espol\petdaycare\patterns\State\ReservationContextTest.class
