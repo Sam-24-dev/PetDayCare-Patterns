@@ -119,7 +119,7 @@ public class ReservationContextTest {
     // ==================== CASOS EXCEPCIONES ====================
     
     @Test
-    @DisplayName("S5: Intentar confirmar reserva ya COMPLETED")
+    @DisplayName("SEXP-1: Intentar confirmar reserva ya COMPLETED")
     void testConfirmFromCompleted() {
         // Arrange: Mover a COMPLETED
         context.confirm();
@@ -135,7 +135,7 @@ public class ReservationContextTest {
     }
     
     @Test
-    @DisplayName("S6: Intentar iniciar servicio desde estado PENDING")
+    @DisplayName("SEXP-2: Intentar iniciar servicio desde estado PENDING")
     void testStartServiceFromPending() {
         // Arrange: Context ya está en PENDING
         
@@ -149,7 +149,7 @@ public class ReservationContextTest {
     }
     
     @Test
-    @DisplayName("S7: Intentar cancelar con parámetro null desde COMPLETED")
+    @DisplayName("SEXP-3: Intentar cancelar con parámetro null desde COMPLETED")
     void testCancelWithNullReasonFromCompleted() {
         // Arrange: Mover a COMPLETED
         context.confirm();
@@ -164,7 +164,7 @@ public class ReservationContextTest {
     }
     
     @Test
-    @DisplayName("S8: Intentar modificar reserva CANCELLED")
+    @DisplayName("SEXP-4: Intentar modificar reserva CANCELLED")
     void testModifyCancelledReservation() {
         // Arrange: Mover a CANCELLED
         context.confirm();

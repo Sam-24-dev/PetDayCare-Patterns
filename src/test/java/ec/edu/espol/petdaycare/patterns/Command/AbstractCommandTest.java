@@ -38,7 +38,7 @@ public class AbstractCommandTest {
     }
         // ==================== CASOS EXCEPCIONES ====================
        @Test
-    @DisplayName("C8: Comando que no soporta undo")
+    @DisplayName("CEXP-4: Comando que no soporta undo")
     void testCanUndoWithoutBackup() {
         // Arrange
         UUID clientId = UUID.randomUUID();

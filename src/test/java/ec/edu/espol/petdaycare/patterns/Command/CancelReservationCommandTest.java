@@ -62,7 +62,7 @@ public class CancelReservationCommandTest {
     // ==================== CASOS EXCEPCIONES ====================
     
     @Test
-    @DisplayName("C5: Ejecutar CancelReservationCommand con ID inexistente")
+    @DisplayName("CEXP-1: Ejecutar CancelReservationCommand con ID inexistente")
     void testExecuteCancelReservationNotFound() {
         // Arrange
         UUID invalidId = UUID.randomUUID();
