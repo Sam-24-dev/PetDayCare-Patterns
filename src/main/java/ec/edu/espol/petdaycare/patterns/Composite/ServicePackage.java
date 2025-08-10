@@ -12,10 +12,13 @@ public class ServicePackage implements ServiceComponent {
     }
 
     public void add(ServiceComponent component) {
+        if (component == null) throw new NullPointerException("No se puede agregar componente nulo");
         components.add(component);
     }
 
     public void remove(ServiceComponent component) {
+        if (!components.contains(component)) 
+        throw new IllegalArgumentException("El componente a eliminar no existe");
         components.remove(component);
     }
 

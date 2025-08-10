@@ -20,9 +20,9 @@ public class BookingFacade {
     }
 
     public String bookService(String petName, ServiceComponent service, String date) {
-        if (petName == null || service == null || date == null) {
-            throw new IllegalArgumentException("Datos de reserva incompletos");
-        }
+        if (petName == null) throw new IllegalArgumentException("Nombre de mascota no puede ser nulo");
+        if (service == null) throw new NullPointerException("Servicio no puede ser nulo");
+        if (date == null) throw new IllegalArgumentException("Fecha no puede ser nula");
 
         if (!service.checkAvailability()) {
             return "Servicio no disponible";
@@ -51,3 +51,4 @@ public class BookingFacade {
         return "Reserva no encontrada";
     }
 }
+
