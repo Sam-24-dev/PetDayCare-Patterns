@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espol.petdaycare.patterns.Builder.PetBuilderTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.017 s <<< FAILURE! -- in ec.edu.espol.petdaycare.patterns.Builder.PetBuilderTest
+ec.edu.espol.petdaycare.patterns.Builder.PetBuilderTest.testBuildPetValido -- Time elapsed: 0.009 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.edu.espol.petdaycare.patterns.Builder.Reservation.toString()" because "reserva" is null
+	at ec.edu.espol.petdaycare.patterns.Builder.PetBuilderTest.testBuildPetValido(PetBuilderTest.java:17)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+

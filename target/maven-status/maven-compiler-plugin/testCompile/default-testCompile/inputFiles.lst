@@ -1,4 +1,12 @@
-C:\Users\USER\Documents\NetBeansProjects\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Command\AbstractCommandTest.java
-C:\Users\USER\Documents\NetBeansProjects\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Command\CommandManagerTest.java
-C:\Users\USER\Documents\NetBeansProjects\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Command\CancelReservationCommandTest.java
-C:\Users\USER\Documents\NetBeansProjects\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\State\ReservationContextTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Observer\SubjectTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Builder\PetBuilderTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Builder\ReservationTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Observer\CaretakerObserverTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Command\AbstractCommandTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Command\CommandManagerTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Observer\PushObserverTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Command\CancelReservationCommandTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Observer\AdminDashboardObserverTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\State\ReservationContextTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Builder\ConcreteReservationBuilderTest.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\test\java\ec\edu\espol\petdaycare\patterns\Builder\ServicePackageBuilderTest.java

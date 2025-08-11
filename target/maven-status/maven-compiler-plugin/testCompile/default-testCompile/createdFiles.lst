@@ -1,4 +1,15 @@
+ec\edu\espol\petdaycare\patterns\Observer\SubjectTest$2.class
+ec\edu\espol\petdaycare\patterns\Observer\SubjectTest.class
+ec\edu\espol\petdaycare\patterns\Observer\CaretakerObserverTest.class
+ec\edu\espol\petdaycare\patterns\Builder\ServicePackageBuilderTest.class
+ec\edu\espol\petdaycare\patterns\Builder\ReservationTest.class
+ec\edu\espol\petdaycare\patterns\Builder\ConcreteReservationBuilderTest.class
+ec\edu\espol\petdaycare\patterns\Observer\SubjectTest$1.class
+ec\edu\espol\petdaycare\patterns\State\ReservationContextTest.class
 ec\edu\espol\petdaycare\patterns\Command\CancelReservationCommandTest.class
+ec\edu\espol\petdaycare\patterns\Observer\AdminDashboardObserverTest.class
+ec\edu\espol\petdaycare\patterns\Builder\PetBuilderTest.class
+ec\edu\espol\petdaycare\patterns\Observer\SubjectTest$3.class
 ec\edu\espol\petdaycare\patterns\Command\CommandManagerTest.class
 ec\edu\espol\petdaycare\patterns\Command\AbstractCommandTest.class
-ec\edu\espol\petdaycare\patterns\State\ReservationContextTest.class
+ec\edu\espol\petdaycare\patterns\Observer\PushObserverTest.class

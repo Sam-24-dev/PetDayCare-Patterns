@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ec.edu.espol.petdaycare.patterns.Builder.ConcreteReservationBuilderTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.401 s -- in ec.edu.espol.petdaycare.patterns.Builder.ConcreteReservationBuilderTest
