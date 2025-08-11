@@ -17,13 +17,11 @@ public class TemplateTest {
     public void testVetReservationProcessor() {
         VetReservationProcessor vetProcessor = new VetReservationProcessor();
 
-        // Ejecutar los pasos
         vetProcessor.validateReservation();
         vetProcessor.calculateCost();
         vetProcessor.makeReservation();
         vetProcessor.notifyUser();
 
-        // Verificar que vetStepExecuted se puso en true tras reserve()
         assertTrue(vetProcessor.isVetStepExecuted(), "El paso veterinario debería estar ejecutado");
     }
 
@@ -32,13 +30,49 @@ public class TemplateTest {
         int prioridad = 5;
         EmergencyReservationProcessor emergencyProcessor = new EmergencyReservationProcessor(prioridad);
 
-        // Ejecutar los pasos
         emergencyProcessor.validateReservation();
         emergencyProcessor.calculateCost();
         emergencyProcessor.makeReservation();
         emergencyProcessor.notifyUser();
 
-        // Verificar que getPriority devuelve la prioridad correcta
         assertEquals(prioridad, emergencyProcessor.getPriority(), "La prioridad debe coincidir");
+    }
+
+    @Test
+    public void testVetReservationProcessor_Exception() {
+        VetReservationProcessor vetProcessor = new VetReservationProcessor() {
+            @Override
+            protected void makeReservation() {
+                throw new RuntimeException("Error simulado en makeReservation");
+            }
+        };
+
+        vetProcessor.validateReservation();
+        vetProcessor.calculateCost();
+
+        RuntimeException ex = assertThrows(RuntimeException.class, () -> {
+            vetProcessor.makeReservation();
+        });
+
+        assertEquals("Error simulado en makeReservation", ex.getMessage());
+    }
+
+    @Test
+    public void testEmergencyReservationProcessor_Exception() {
+        EmergencyReservationProcessor emergencyProcessor = new EmergencyReservationProcessor(1) {
+            @Override
+            protected void makeReservation() {
+                throw new RuntimeException("Error simulado en makeReservation emergencia");
+            }
+        };
+
+        emergencyProcessor.validateReservation();
+        emergencyProcessor.calculateCost();
+
+        RuntimeException ex = assertThrows(RuntimeException.class, () -> {
+            emergencyProcessor.makeReservation();
+        });
+
+        assertEquals("Error simulado en makeReservation emergencia", ex.getMessage());
     }
 }

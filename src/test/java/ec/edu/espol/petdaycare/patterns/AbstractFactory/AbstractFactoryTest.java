@@ -16,7 +16,7 @@ import org.junit.jupiter.api.Test;
 public class AbstractFactoryTest {
 
     @Test
-    void testBasicCenterFactory() {
+    public void testBasicCenterFactory() {
         CenterServiceFactory factory = new BasicCenterFactory();
 
         assertTrue(factory.createGuarderiaService() instanceof BasicGuarderiaService);
@@ -35,7 +35,7 @@ public class AbstractFactoryTest {
     }
 
     @Test
-    void testPremiumCenterFactory() {
+    public void testPremiumCenterFactory() {
         CenterServiceFactory factory = new PremiumCenterFactory();
 
         assertTrue(factory.createGuarderiaService() instanceof PremiumGuarderiaService);
@@ -54,7 +54,7 @@ public class AbstractFactoryTest {
     }
 
     @Test
-    void testVeterinaryCenterFactory() {
+    public void testVeterinaryCenterFactory() {
         CenterServiceFactory factory = new VeterinaryCenterFactory();
 
         assertTrue(factory.createGuarderiaService() instanceof VeterinaryGuarderiaService);
@@ -70,5 +70,40 @@ public class AbstractFactoryTest {
             factory.createVetService().atenderMascota());
         assertEquals("Extras veterinarios: vacunas y chequeos", 
             factory.createAddonService().aplicarExtra());
+    }
+
+    @Test
+    public void testBasicCenterFactory_NullService() {
+        CenterServiceFactory factory = new BasicCenterFactory() {
+            @Override
+            public GuarderiaService createGuarderiaService() {
+                return null; // Simula servicio nulo
+            }
+        };
+
+        assertThrows(NullPointerException.class, () -> {
+            factory.createGuarderiaService().cuidarMascota();
+        });
+    }
+
+    @Test
+    public void testPremiumCenterFactory_InvalidData() {
+        CenterServiceFactory factory = new PremiumCenterFactory() {
+            @Override
+            public VetService createVetService() {
+                return new PremiumVetService() {
+                    @Override
+                    public String atenderMascota() {
+                        throw new IllegalArgumentException("Datos inválidos para veterinario");
+                    }
+                };
+            }
+        };
+
+        IllegalArgumentException ex = assertThrows(IllegalArgumentException.class, () -> {
+            factory.createVetService().atenderMascota();
+        });
+
+        assertEquals("Datos inválidos para veterinario", ex.getMessage());
     }
 }
