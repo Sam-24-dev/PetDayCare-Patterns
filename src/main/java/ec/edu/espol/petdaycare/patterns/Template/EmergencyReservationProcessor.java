@@ -2,6 +2,12 @@ package ec.edu.espol.petdaycare.patterns.Template;
 
 public class EmergencyReservationProcessor extends ReservationProcessor {
 
+    private int priority;
+
+    public EmergencyReservationProcessor(int priority) {
+        this.priority = priority;
+    }    
+    
     @Override
     protected void validateReservation() {
         System.out.println("Validacion prioritaria para emergencia...");
@@ -21,5 +27,10 @@ public class EmergencyReservationProcessor extends ReservationProcessor {
     protected void notifyUser() {
         System.out.println("Notificando al usuario y al personal de emergencia");
     }
+
+    public int getPriority() {
+        return priority;
+    }
+
     
 }

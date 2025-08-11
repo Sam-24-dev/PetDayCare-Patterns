@@ -20,6 +20,7 @@ C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\p
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\PetDayCarePatterns.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Command\ReassignCaretakerCommand.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\AbstractFactory\BasicWalkService.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\AbstractFactory\PremiumCenterFactory.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Command\PaymentService.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Composite\WeeklyPackage.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\AbstractFactory\AddonService.java
@@ -29,6 +30,7 @@ C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\p
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\AbstractFactory\VetService.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\State\CancelledState.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\State\ReservationEvent.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\AbstractFactory\VeterinaryCenterFactory.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Facade\NotificationService.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\AbstractFactory\VeterinaryGuarderiaService.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\AbstractFactory\PremiumAddonService.java
@@ -48,6 +50,7 @@ C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\p
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Observer\CaretakerObserver.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Facade\BookingFacade.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Observer\PushObserver.java
+C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\AbstractFactory\BasicCenterFactory.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Builder\PetBuilder.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\State\TransitionResult.java
 C:\Users\johan\Documents\GitHub\PetDayCare-Patterns\src\main\java\ec\edu\espol\petdaycare\patterns\Command\CommandLog.java

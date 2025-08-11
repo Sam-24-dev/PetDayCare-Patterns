@@ -1,10 +1,15 @@
 package ec.edu.espol.petdaycare.patterns.Template;
 
-public class VetReservationProcessor extends ReservationProcessor {
+import java.util.function.BooleanSupplier;
 
+public class VetReservationProcessor extends ReservationProcessor {
+    private boolean vetStepExecuted ;
+    
     @Override
     protected void validateReservation() {
-        System.out.println("Validando datos medicos del paciente");
+        System.out.println("Reservando atención veterinaria...");
+        vetStepExecuted = true;
+        System.out.println("vetStepExecuted seteado a: " + vetStepExecuted);
     }
 
     @Override
@@ -20,6 +25,10 @@ public class VetReservationProcessor extends ReservationProcessor {
     @Override
     protected void notifyUser() {
         System.out.println("Enviando confirmacion de cita veterinaria");
+    }
+
+    public boolean isVetStepExecuted() {
+        return vetStepExecuted; 
     }
     
 }

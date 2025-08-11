@@ -1,7 +1,8 @@
 package ec.edu.espol.petdaycare.patterns.AbstractFactory;
 
 public class BasicGuarderiaService implements GuarderiaService {
-    public void provideService(){
-        System.out.println("Guarderia basica");
+    @Override
+    public String cuidarMascota(){
+        return "Guarderia basica cuidando a la mascota";
     }
 }

@@ -1,7 +1,8 @@
 package ec.edu.espol.petdaycare.patterns.AbstractFactory;
 
 public class VeterinaryGuarderiaService implements GuarderiaService {
-    public void provideService(){
-        System.out.println("Guarderia especializada en recuperacion");
+    @Override
+    public String cuidarMascota(){
+        return "Guarderia con supervision veterinaria";
     }
 }

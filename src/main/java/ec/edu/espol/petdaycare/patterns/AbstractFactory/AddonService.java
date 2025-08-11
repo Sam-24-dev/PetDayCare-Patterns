@@ -1,5 +1,5 @@
 package ec.edu.espol.petdaycare.patterns.AbstractFactory;
 
 public interface AddonService {
-    void provideService();
+    String aplicarExtra();
 }
